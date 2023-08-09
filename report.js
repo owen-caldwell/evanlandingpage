@@ -1,11 +1,17 @@
 const slideshow = document.querySelector('.reportWrapper');
 const slides = Array.from(slideshow.children);
 let currentIndex = 0;
-
+let dots = document.getElementsByClassName("dt");
 function goToSlide(index) {
   currentIndex = index;
   const offset = -currentIndex * 100;
   slideshow.style.transform = `translateX(${offset}%)`;
+  dots[index].src = "selected.svg";
+  for (i = 0; i < dots.length; i++) {
+    if (i != index) {
+      dots[i].src = "unselected.svg";
+    };
+  }
 }
 
 function nextSlide() {
@@ -13,5 +19,5 @@ function nextSlide() {
   
   goToSlide(currentIndex);
 }
-
-setInterval(nextSlide, 5000); // Auto scroll every 5 seconds
+goToSlide(0);
+var refreshIntervalID = setInterval(nextSlide, 5000); // Auto scroll every 5 seconds
