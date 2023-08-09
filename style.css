@@ -58,7 +58,7 @@ nav {
 nav .mlinks {visibility: hidden;}
 .typeform-button button {
     color:white !important;
-    background-color: black !important;
+    background: none !important;
     line-height: normal !important;
     border-radius: 5px !important;
     padding: 0 1em !important;
@@ -87,6 +87,10 @@ nav a, nav button {
 .main .txt2 h2 a {
     color: white;
 }
+.main .txt2 h2 a img {
+    width: 13px;
+    margin-bottom: .15em;
+}
 .main .report {
     display: flex;
     grid-area: report;
@@ -108,12 +112,23 @@ nav a, nav button {
     margin-top: .7em;
 }
 .main .report aside img {
-    width: 15px;
     height: 15px;
     margin: 0 .35em 0 .35em;
 }
 .howitworks {
     background-color: rgb(197, 197, 255);
+}
+.howitworks article h3 {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+}
+.howitworks article h3 .num {
+    margin-right: .7em;
+}
+.howitworks article h3 .emoji {
+    margin-left: 10%;
+    width: 70px;
 }
 /*
 .main .report .rhead{
