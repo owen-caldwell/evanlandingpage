@@ -120,7 +120,7 @@ nav a, nav button {
 }
 .howitworks article h3 {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     font-weight: 600;
 }
 .howitworks article h3 .num {
@@ -247,6 +247,9 @@ nav a, nav button {
         margin: 0 2em 0 2em;
     }
     .howitworks {grid-area: howitworks;}
+    .howitworks article h3 {
+        align-items: flex-end;
+    }
     .about {grid-area: about;}
     .faq {grid-area: faq;}
 }
