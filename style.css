@@ -84,6 +84,9 @@ nav a, nav button {
     background: black;
     color: white;
 }
+.main .txt h2 {
+    font-size: 1.8em
+}
 .main .txt2 h2 a {
     color: white;
 }
