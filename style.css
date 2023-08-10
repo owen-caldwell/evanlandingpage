@@ -162,6 +162,7 @@ nav a, nav button {
 }
 .howitworks .btmbtn {
     display: flex;
+    border: none;
     background-color: rgb(93, 93, 255);
     filter: drop-shadow(4px 4px 0 black);
     padding: .6em;
