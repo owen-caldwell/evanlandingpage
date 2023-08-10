@@ -57,12 +57,30 @@ nav {
 }
 nav .mlinks {visibility: hidden;}
 .typeform-button button {
+    display: inline-block !important;
+    position: relative !important;
     color:white !important;
     background: none !important;
     line-height: normal !important;
     border-radius: 5px !important;
-    padding: 0 1em !important;
-    height: 40px !important;
+    padding: 0 !important;
+    height: 22px !important;
+}
+.typeform-button button:after {
+  content: '' !important;
+  position: absolute !important;
+  width: 100% !important;
+  transform: scaleX(0) !important;
+  height: 2px !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  background-color: white !important;
+  transform-origin: bottom right !important;
+  transition: transform 0.25s ease-out !important;
+}
+.typeform-button button:hover:after {
+    transform: scaleX(1) !important;
+    transform-origin: bottom left !important;
 }
 nav button {
     font-size: 1em;
@@ -87,12 +105,15 @@ nav a, nav button {
 .main .txt h2 {
     font-size: 1.8em
 }
+.main .txt2 h2 {
+    display: flex;
+}
 .main .txt2 h2 a {
     color: white;
 }
-.main .txt2 h2 a img {
-    width: 13px;
-    margin-bottom: .15em;
+.main .txt2 h2 img {
+    width: 12px;
+    margin: 0 0 .15em .1em;
 }
 .main .report {
     display: flex;
@@ -132,6 +153,19 @@ nav a, nav button {
 .howitworks article h3 .emoji {
     margin-left: 10%;
     width: 70px;
+}
+.howitworks .btmbtn {
+    display: flex;
+    background-color: rgb(93, 93, 255);
+    filter: drop-shadow(4px 4px 0 black);
+    padding: .6em;
+    border-radius: 5px;
+}
+.btmbtn:active {filter: none;}
+.btmbtn:hover {background-color: rgb(24, 24, 189);}
+.howitworks .btmbtn img {
+    width: 12px;
+    margin: 0 0 .15em .1em;
 }
 /*
 .main .report .rhead{
@@ -218,7 +252,7 @@ nav a, nav button {
         display: none;
     }
     header {
-        max-width: 1175px;
+        max-width: 1180px;
         margin: auto;
     }
     header ul {
