@@ -76,8 +76,11 @@ nav a, nav button {
     background: black;
     color: white;
 }
+.main .txt h1 {
+    font-size: 2em
+}
 .main .txt h2 {
-    font-size: 1.8em
+    font-size: 1.5em
 }
 .typeform-button button {
     display: inline-block !important;
