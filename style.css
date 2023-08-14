@@ -259,6 +259,9 @@ nav a, nav button {
     justify-content: space-between;
     align-items: center;
 }
+.faq div p {
+    margin: 1em;
+}
 .faq article {
     height: fit-content;
     border-top: 1px solid black;
