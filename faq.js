@@ -1,4 +1,5 @@
 let questions = document.querySelectorAll(".q");
+let arrows = document.querySelectorAll(".qarrow");
 let answers = document.querySelectorAll(".a");
 for (let i = 0; i < questions.length; i++) {
     questions[i].className = "q" + i;
@@ -8,12 +9,12 @@ for (let i = 0; i < questions.length; i++) {
             console.log("opening!" + i);
             answers[i].style.display = "flex";
             answers[i].style.height = "auto";
-            questions[i].style.transform = "rotate(180deg)";
+            arrows[i].style.transform = "rotate(180deg)";
         } else {
             console.log("closing!" + i);
             answers[i].style.display = "none";
             answers[i].style.height = "0";
-            questions[i].style.transform = "rotate(0deg)";
+            arrows[i].style.transform = "rotate(0deg)";
         }
     });
 };
