@@ -275,7 +275,7 @@ nav a, nav button {
     align-items: center;
 }
 .faq article span h4 {
-    font-weight: normal;
+    font-weight: medium;
     margin: .5em;
 }
 .faq article span img {
@@ -283,7 +283,10 @@ nav a, nav button {
     height: 30px;
     transition: transform .2s linear;
 }
-.faq article p {display: none;}
+.faq article p {
+    display: none;
+    margin-left: .5em;
+}
 
 @media (min-width: 750px) {
     body {
