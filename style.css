@@ -42,6 +42,9 @@ header ul {
 header ul a {
     margin: .5em 2em .5em 2em;
 }
+img.rounded {
+    border-radius: 50%;
+}
 nav {
     display: flex;
     transition: height .3s ease;
