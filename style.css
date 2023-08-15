@@ -261,6 +261,7 @@ nav a, nav button {
 }
 .faq div p {
     margin: 1em;
+    text-decoration: none;
 }
 .faq article {
     height: fit-content;
