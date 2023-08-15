@@ -294,6 +294,15 @@ nav a, nav button {
     margin-left: .5em;
 }
 
+.top-quote > p {
+    margin-top: 0.5em;
+}
+
+.bottom-quote {
+    display: flex;
+    justify-content: center;
+}
+
 @media (min-width: 750px) {
     body {
         margin: 0 2em 2em 2em;
