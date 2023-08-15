@@ -5,9 +5,9 @@ for (let i = 0; i < questions.length; i++) {
     questions[i].className = "q" + i;
     answers[i].className = "a" + i;
     questions[i].addEventListener("click", ()=> {
-        if (answers[i].style.display != "flex") {
+        if (answers[i].style.display != "block") {
             console.log("opening!" + i);
-            answers[i].style.display = "flex";
+            answers[i].style.display = "block";
             answers[i].style.height = "auto";
             arrows[i].style.transform = "rotate(180deg)";
         } else {

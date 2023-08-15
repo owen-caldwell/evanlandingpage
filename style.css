@@ -261,7 +261,9 @@ nav a, nav button {
 }
 .faq div p {
     margin: 1em;
-    text-decoration: none;
+}
+.faq article p a {
+    color: black;
 }
 .faq article {
     height: fit-content;
