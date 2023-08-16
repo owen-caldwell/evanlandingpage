@@ -90,11 +90,16 @@ nav a, nav button {
     background: black;
     color: white;
 }
+.txt {
+    max-width: 75%;
+}
 .main .txt h1 {
-    font-size: 2em
+    font-size: 3.5em;
+    margin-bottom: .5em;
 }
 .main .txt h2 {
-    font-size: 1.5em
+    font-weight: normal;
+    font-size: 1.2em
 }
 .typeform-button button {
     display: inline-block !important;
@@ -126,9 +131,12 @@ nav a, nav button {
     display: flex;
     width: fit-content;
     border-radius: 5px;
-    padding: .2em;
+    padding: .2em .8em .35em .8em;
     background-color: rgb(93, 93, 255);
-    filter: drop-shadow(4px 4px 0 white)
+    filter: drop-shadow(6px 6px 0 white)
+}
+.nav-tf-btn {
+
 }
 .main .txt2 h2:hover {background-color: rgb(24, 24, 189);}
 .main .txt2 h2 a {
@@ -204,10 +212,13 @@ nav a, nav button {
     justify-content:center;
     align-items: center;
 }
+.qt article h2, .faq h2, .about h2, .howitworks h2 {
+    font-size: 2em;
+}
 .quote .quoteWrapper .qt .quoteauthor img {
     width: 70px;
     height: 70px;
-    margin-left: 3em;
+    margin-right: 1em;
 }
 .quote .quoteWrapper .qt .quoteauthor p {
     text-align: right;
@@ -236,8 +247,8 @@ nav a, nav button {
     display: flex;
     border: none;
     background-color: rgb(93, 93, 255);
-    filter: drop-shadow(4px 4px 0 black);
-    padding: .6em;
+    filter: drop-shadow(6px 6px 0 black);
+    padding: .2em .8em .35em .8em;
     border-radius: 5px;
 }
 .btmbtn:active {filter: none;}
@@ -376,7 +387,7 @@ nav a, nav button {
         max-width: 1100px;
     }
     .main .txt {grid-area: txt;}
-    .main .txt2 {grid-area: txt2;}
+    /*.main .txt2 {grid-area: txt2;}*/
     .main article {
         margin: 0 2em 0 2em;
     }
