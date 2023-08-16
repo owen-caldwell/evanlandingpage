@@ -33,6 +33,12 @@ header {
     border-radius: 5px;
     float: right;
 }
+.subscribe {
+    border: none;
+    border-radius: 5px;
+    padding: .5em 1em .5em 1em;
+    background-color: rgb(127, 245, 127);
+}
 header ul {
     display: none;
     z-index: 2;
@@ -40,7 +46,15 @@ header ul {
 
 }
 header ul a {
+    color: black;
+    text-decoration: none;
     margin: .5em 2em .5em 2em;
+}
+header ul a:hover {
+    text-decoration:underline;
+}
+img.rounded {
+    border-radius: 50%;
 }
 nav {
     display: flex;
@@ -63,7 +77,7 @@ nav button {
 }
 nav a, nav button {
     width: fit-content;
-    margin: .5em 0 0 0;
+    margin: 1em 0 0 0;
     padding: .2em;
 }
 .block {
@@ -154,32 +168,48 @@ nav a, nav button {
     align-items: center;
     justify-content: center;
 }
-.quote article h2 {
+.quote {
+    display: flex;
+    overflow-x: hidden;
+    padding: 1em 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.qt {
+    max-width: 1100px;
+    width: 90vw;
+}
+.quoteWrapper {
+    display: flex;
+    justify-content: flex-start;
+    transition: transform 0.5s ease-in-out;
+}
+.quote .quoteWrapper .qt article h2 {
     text-align: center;
 }
-.quote .quotedecoration {
+.quote .quoteWrapper .qt .quotedecoration {
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: center;
 }
-.quote .quotedecoration img {
-    width: 350px;
-    margin: 1em;
+.quote .quoteWrapper .qt .quotedecoration img {
+    width: 330px;
+    margin: 2em 0;
 }
-.quote .quoteauthor {
+.quote .quoteWrapper .qt .quoteauthor {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content:center;
     align-items: center;
 }
-.quote .quoteauthor img {
-    width: 80px;
-    height: 80px;
-    margin-left: 4em;
+.quote .quoteWrapper .qt .quoteauthor img {
+    width: 70px;
+    height: 70px;
+    margin-left: 3em;
 }
-.quote .quoteauthor p {
+.quote .quoteWrapper .qt .quoteauthor p {
     text-align: right;
     font-size: 1.2em;
 }
@@ -291,6 +321,15 @@ nav a, nav button {
     margin-left: .5em;
 }
 
+.top-quote > p {
+    margin-top: 0.5em;
+}
+
+.bottom-quote {
+    display: flex;
+    justify-content: center;
+}
+
 @media (min-width: 750px) {
     body {
         margin: 0 2em 2em 2em;
@@ -310,6 +349,7 @@ nav a, nav button {
     #hamburger {
         display: none;
     }
+    .subscribe {margin: 0.5em 2em 0.5em 2em;}
     nav {
         display: none;
     }
@@ -320,12 +360,6 @@ nav a, nav button {
     header ul {
         display: flex;
         align-items: center;
-    }
-    header ul button {
-        border-radius: 5px;
-        height: fit-content;
-        padding: .3em .6em .3em .6em;
-        background-color: rgb(127, 245, 127);
     }
     .block {
         max-width: 500px;
@@ -346,6 +380,9 @@ nav a, nav button {
     .main article {
         margin: 0 2em 0 2em;
     }
+    .qt {
+        width: 100vw;
+    }
     main .quote {
         grid-area: quote;
         width: 90vw;
@@ -357,4 +394,15 @@ nav a, nav button {
     }
     .about {grid-area: about;}
     .faq {grid-area: faq;}
+}
+@media (min-width: 750px) and (max-width: 1246px) {
+    body {
+        margin: 0;
+    }
+    #logo {
+        margin: 0 .5em;
+    }
+    header {
+        width: 100vw;
+    }
 }

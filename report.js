@@ -20,4 +20,4 @@ function nextSlide() {
   goToSlide(currentIndex);
 }
 goToSlide(0);
-var refreshIntervalID = setInterval(nextSlide, 5000); // Auto scroll every 5 seconds
+var refreshIntervalID = setInterval(nextSlide, 8000); // Auto scroll every 5 seconds
