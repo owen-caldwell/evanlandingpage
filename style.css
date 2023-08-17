@@ -248,7 +248,7 @@ nav a, nav button {
     border: none;
     background-color: rgb(93, 93, 255);
     filter: drop-shadow(6px 6px 0 black);
-    padding: .2em .8em .35em .8em;
+    padding: .4em 1.2em .4em 1.2em;
     border-radius: 5px;
 }
 .btmbtn:active {filter: none;}
@@ -336,6 +336,12 @@ nav a, nav button {
     margin-top: 0.5em;
 }
 
+.top-quote > p > b {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
 .bottom-quote {
     display: flex;
     justify-content: center;
@@ -389,7 +395,7 @@ nav a, nav button {
     .main .txt {grid-area: txt;}
     /*.main .txt2 {grid-area: txt2;}*/
     .main article {
-        margin: 0 2em 0 2em;
+        margin: 0 1em 0 1em;
     }
     .qt {
         width: 100vw;
