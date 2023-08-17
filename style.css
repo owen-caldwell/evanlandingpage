@@ -392,7 +392,7 @@ h1#logo {
     }
     .block {
         max-width: 500px;
-        margin: 1em;
+        margin: 0.5em;
         padding: 2em;
     }
     main .main {
