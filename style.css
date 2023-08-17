@@ -342,6 +342,18 @@ nav a, nav button {
     text-align: center;
 }
 
+.logo-img {
+    max-height: 35px;
+}
+
+.left-element {
+    display : flex;
+}
+
+h1#logo {
+    margin-left: 20px;
+}
+
 .bottom-quote {
     display: flex;
     justify-content: center;
